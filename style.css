@@ -1,0 +1,23 @@
+.page {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 90%;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: cyan;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    /* width: 20vw; */
+}
+
+.header {
+    background-color: blanchedalmond;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.content {
+    background-color: gray;
+}
