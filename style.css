@@ -23,7 +23,7 @@ li {
 .page {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 80%;
     height: 100vh;
 }
 
@@ -49,12 +49,12 @@ div.brand img {
 }
 
 .header {
-    background-color: blanchedalmond;
+    background-color: #f5f5f5;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% 60%;
 }
 
 .content {
@@ -73,3 +73,53 @@ img[src$='.svg'] {
     padding-right: 0.4rem;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar
+{
+    width: 90%;
+}
+.search input {
+    width: 80%;
+    border-style: none;
+    border-radius: 0.5rem;
+    background-color: #d4d4d4;
+}
+
+.info {
+    /* display: flex; */
+    padding: 1rem;
+    text-align: end;
+}
+
+.welcome {
+    padding: 1rem;
+}
+
+.welcome .hi {
+    font-size: smaller;
+}
+
+.welcome .name {
+    font-size: larger;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.buttons button {
+    border-style: none;
+    background-color: #0ea5e9;
+    color: #e5e5e5;
+    border-radius: 1rem;
+    padding: 0.5rem 1.3rem;
+    font-size: smaller;
+}
