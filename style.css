@@ -60,7 +60,8 @@ div.brand img {
 .content {
     background-color: #d1d5db;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
 }
 
 .projects {
@@ -122,4 +123,86 @@ img[src$='.svg'] {
     border-radius: 1rem;
     padding: 0.5rem 1.3rem;
     font-size: smaller;
+}
+
+.projects {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.projects > div {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: #e5e5e5;
+    border-left: solid thick orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .title {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.projects .text {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.projects div.icons {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.announce {
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background-color: #e5e5e5;
+    padding: 1.3rem;
+}
+
+.announce > div {
+    padding: 0.7rem 0;
+    border-bottom: solid thin grey;
+}
+
+.announce > div:last-child {
+    border-bottom: none;
+} 
+
+.announce .title {
+    font-size: 0.7rem;
+}
+
+.announce .text {
+    font-size: 0.6rem;
+}
+
+.trending   {
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background-color: #e5e5e5;
+    padding: 1.3rem;
+}
+
+.trending > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.trending img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.trending .login {
+    font-size: 0.75rem;
+}
+
+.trending .description {
+    font-size: 0.8rem;
+    color: #4b5563;
 }
